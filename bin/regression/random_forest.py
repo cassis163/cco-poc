@@ -3,7 +3,7 @@ from os import getcwd
 from sklearn.ensemble import RandomForestRegressor
 
 df = pd.read_csv(getcwd() + '/data/winequality-red.csv')
-regressor = RandomForestRegressor(n_estimators=5000)
+regressor = RandomForestRegressor(n_estimators=2000)
 
 target = 'quality'
 features = [item for item in df.columns.values if item != target]
